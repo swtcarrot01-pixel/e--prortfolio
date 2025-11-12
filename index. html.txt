@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>E-Portfolio — Hannah F. Dacuital</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --accent:#0b3b66; /* navy */
+      --muted:#f5f5f5;
+      --paper:#fff8f0;
+      --text:#222;
+      --accent-2:#d9a441;
+      --card-radius:14px;
+      --container-max:1100px;
+    }
+    html,body{height:100%;margin:0;font-family:"Open Sans",system-ui,Arial,sans-serif;color:var(--text);background:linear-gradient(180deg,#ffffff 0%, #fbfbfb 100%);}
+    a{color:var(--accent); text-decoration:none;}
+    header{background:var(--paper);border-bottom:1px solid #eee;padding:18px 24px;position:sticky;top:0;z-index:20;}
+    .wrap{max-width:var(--container-max);margin:0 auto;}
+    .brand{display:flex;align-items:center;gap:18px;}
+    .brand .logo{width:68px;height:68px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-family:"Playfair Display",serif;}
+    nav{margin-left:auto;}
+    nav a{margin-left:16px;font-weight:600;color:#1b2b3a;}
+    .hero{padding:48px 24px 56px;display:flex;align-items:center;min-height:64vh;}
+    .hero-inner{display:flex;gap:36px;align-items:center;width:100%;justify-content:space-between;}
+    .cover-left{max-width:620px;}
+    h1{font-family:"Playfair Display",serif;font-size:34px;margin:6px 0;color:var(--accent);}
+    .subtitle{font-weight:600;color:#444;margin-bottom:18px;}
+    .meta{background:var(--muted);padding:14px;border-radius:10px;display:inline-block;font-weight:600;}
+    .photo-placeholder{width:220px;height:220px;border-radius:12px;background:#eee;display:flex;align-items:center;justify-content:center;color:#bbb;font-weight:700;}
+    .section{padding:40px 24px;border-top:1px solid #f0f0f0;}
+    .section h2{font-family:"Playfair Display",serif;font-size:22px;margin:0 0 12px;color:var(--accent);}
+    .toc-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;}
+    .card{background:white;border-radius:12px;padding:14px;box-shadow:0 6px 18px rgba(20,30,40,0.04);border:1px solid #f1f1f1;}
+    .card p{margin:0;color:#555;}
+    .topics-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:18px;}
+    .topic-card{padding:16px;border-radius:12px;background:linear-gradient(180deg,#ffffff,#fcfcfc);border:1px solid #eee;}
+    .topic-card h3{margin:0 0 8px;font-size:16px;color:var(--accent);}
+    .topic-card .meta{display:block;margin-top:8px;background:transparent;padding:0;font-weight:600;color:#666;}
+    .reaction-list{display:flex;flex-direction:column;gap:12px;}
+    footer{padding:24px 0;background:#fafafa;border-top:1px solid #eee;margin-top:28px;}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px;}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;font-weight:600;font-size:14px;}
+    .btn.ghost{background:transparent;border:1px solid var(--accent);color:var(--accent);}
+    .small{font-size:13px;color:#666;}
+    .cover-fullpage{height:70vh;display:flex;align-items:center;justify-content:center;border-radius:12px;overflow:hidden;background:linear-gradient(180deg,rgba(11,59,102,0.06),rgba(11,59,102,0.02));padding:30px;}
+    .cover-title{font-family:"Playfair Display",serif;font-size:28px;margin-bottom:10px;}
+    .signature{margin-top:18px;font-weight:700;}
+    .attachments-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;}
+    /* responsive tweaks */
+    @media (max-width:880px){
+      .hero-inner{flex-direction:column;align-items:flex-start;}
+      .photo-placeholder{width:160px;height:160px;}
+      h1{font-size:26px;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wrap" style="display:flex;align-items:center;">
+    <div class="brand">
+      <div class="logo">EVSU</div>
+      <div>
+        <div style="font-weight:700;color:var(--accent);font-family:'Playfair Display',serif;">E-PORTFOLIO IN PROFESSIONAL EDUCATION 003</div>
+        <div class="small">THE TEACHER & THE COMMUNITY, SCHOOL CULTURE & ORGANIZATIONAL LEADERSHIP</div>
+      </div>
+    </div>
+
+    <nav aria-label="main navigation">
+      <a href="#cover">Cover</a>
+      <a href="#cover-letter">Cover Letter</a>
+      <a href="#toc">Table of Contents</a>
+      <a href="#topics">Topics</a>
+      <a href="#reactions">Reaction Papers</a>
+      <a href="#attachments">Attachments</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- Cover -->
+  <section id="cover" class="hero">
+    <div class="hero-inner">
+      <div class="cover-left">
+        <div class="cover-fullpage card">
+          <div>
+            <div class="cover-title">E-PORTFOLIO IN PROFESSIONAL EDUCATION 003</div>
+            <div style="font-size:18px;font-weight:700;margin-bottom:8px;">THE TEACHER AND THE COMMUNITY, SCHOOL CULTURE, AND ORGANIZATIONAL LEADERSHIP</div>
+            <div style="margin-top:18px;">
+              <div class="meta">HANNAH F. DACUITAL — BTVTED FSM 1B</div>
+            </div>
+
+            <div style="margin-top:18px;">
+              <div class="small">EASTERN VISAYAS STATE UNIVERSITY<br/>SCHOOL OF EDUCATION — TACLOBAN CITY</div>
+              <div style="margin-top:6px;font-weight:700;">NOVEMBER 2025</div>
+            </div>
+
+            <div style="margin-top:20px;">
+              <a class="btn" href="#cover-letter">View Cover Letter</a>
+              <a class="btn ghost" href="#topics">Go to Topics</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <!-- placeholder for student's photo or school logo -->
+        <div class="photo-placeholder card">
+          Photo / Logo
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cover Letter -->
+  <section id="cover-letter" class="section">
+    <h2>Cover Letter</h2>
+    <div class="card">
+      <p style="font-style:italic;margin-bottom:12px;">“Education is the movement from darkness to light.” — Allan Bloom</p>
+
+      <p>
+        This e-portfolio reflects my journey through <strong>Professional Education 003</strong>, exploring the relationship between
+        teachers, schools, communities, and organizational leadership. It collects my major activities, outputs, and reaction papers,
+        showing how each task contributed to my growth as a future educator. The artifacts here demonstrate core values I aim to bring
+        into my teaching: service, critical reflection, and community engagement.
+      </p>
+
+      <p class="signature">HANNAH F. DACUITAL<br/><span class="small">BTVTED FSM 1B</span></p>
+    </div>
+  </section>
+
+  <!-- Table of Contents -->
+  <section id="toc" class="section">
+    <h2>Table of Contents</h2>
+    <div class="toc-list">
+      <div class="card">
+        <strong>Book Cover</strong>
+        <p class="small">Main cover page with student & institutional info</p>
+      </div>
+      <div class="card">
+        <strong>Cover Letter</strong>
+        <p class="small">Summary of the portfolio and student signature</p>
+      </div>
+      <div class="card">
+        <strong>Topics and Activities</strong>
+        <p class="small">Complete list of topics, activities, outputs, photos, and reaction papers</p>
+      </div>
+      <div class="card">
+        <strong>Reaction Papers</strong>
+        <p class="small">Compiled reflections</p>
+      </div>
+      <div class="card">
+        <strong>Attachments</strong>
+        <p class="small">IMs, TOS, tests, and other supporting documents</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Topics & Activities -->
+  <section id="topics" class="section">
+    <h2>Topics and Activities</h2>
+
+    <p class="small">Click any topic to view the recommended structure (Photo → Output → Reaction/Reflection).</p>
+
+    <div class="topics-grid">
+      <!-- Foundations group -->
+      <div class="topic-card card" id="topic-philosophy">
+        <h3>Philosophical Thoughts on Education</h3>
+        <p>Suggested artifacts: position paper, class notes, presentation slides.</p>
+        <div class="meta">Include: Photo of reporting • Reflection / Reaction Paper</div>
+      </div>
+
+      <div class="topic-card card" id="topic-history">
+        <h3>Historical Foundation of School</h3>
+        <p>Suggested artifacts: timeline, historical summary, group output.</p>
+        <div class="meta">Include: Timeline visual • Reaction paper</div>
+      </div>
+
+      <div class="topic-card card" id="topic-society">
+        <h3>Society as Foundation of Schools and Schooling</h3>
+        <p>Suggested artifacts: community mapping, write-up, interview transcripts.</p>
+        <div class="meta">Include: Photo of activity • Reflection</div>
+      </div>
+
+      <div class="topic-card card" id="topic-roles">
+        <h3>Fundamental Roles and Functions of Schools</h3>
+        <p>Suggested artifacts: role maps, class discussion outputs.</p>
+        <div class="meta">Include: Report photo • Reaction paper</div>
+      </div>
+
+      <div class="topic-card card" id="topic-socialchange">
+        <h3>School as a Vehicle for Social Change</h3>
+        <p>Suggested artifacts: community project report, reflection piece.</p>
+        <div class="meta">Include: Project photo • Reaction paper</div>
+      </div>
+
+      <!-- Teacher in society section -->
+      <div class="topic-card card" id="topic-filipino">
+        <h3>Strengths & Weaknesses of the Filipino Character</h3>
+        <p>Suggested artifacts: comparative analysis, class survey.</p>
+        <div class="meta">Include: Activity photo • Reflection</div>
+      </div>
+
+      <div class="topic-card card" id="topic-roles-teacher">
+        <h3>Roles of the Teacher in Society</h3>
+        <p>Suggested artifacts: poster, role-play video, report.</p>
+        <div class="meta">Include: Photo • Reaction paper</div>
+      </div>
+
+      <div class="topic-card card" id="topic-pedagogy">
+        <h3>Pedagogical Competencies of Teachers</h3>
+        <p>Suggested artifacts: competency checklist, lesson exemplar.</p>
+        <div class="meta">Include: IM or lesson plan • Reflection</div>
+      </div>
+
+      <div class="topic-card card" id="topic-link">
+        <h3>The Teacher as a Vital Link Between School & Community</h3>
+        <p>Suggested artifacts: community engagement reports, photos.</p>
+        <div class="meta">Include: Documentation photo • Reflection</div>
+      </div>
+
+      <div class="topic-card card" id="topic-whyhow">
+        <h3>The Why & How of Schools and Society</h3>
+        <p>Suggested artifacts: essay, position paper, group project.</p>
+        <div class="meta">Include: Written output • Reaction paper</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Reaction Papers -->
+  <section id="reactions" class="section">
+    <h2>Reaction Papers</h2>
+    <div class="card reaction-list">
+      <div>
+        <strong>Reaction Paper 1 — Philosophical Thoughts on Education</strong>
+        <p class="small">Short summary + link to full document (upload full text as PDF in Attachments).</p>
+      </div>
+      <div>
+        <strong>Reaction Paper 2 — Historical Foundation of the School</strong>
+        <p class="small">Short summary + link to full PDF.</p>
+      </div>
+      <div>
+        <strong>Reaction Paper 3 — Society & Schooling</strong>
+        <p class="small">Short summary + link to full PDF.</p>
+      </div>
+      <!-- Add more entries here -->
+    </div>
+  </section>
+
+  <!-- Attachments -->
+  <section id="attachments" class="section">
+    <h2>Other Attachments</h2>
+    <p class="small">Upload the following files and link them here: Lesson Plans / IMs, Table of Specifications, Test Questionnaires & Answer Keys, Reporters’ Records, Whole Class Video (link).</p>
+
+    <div class="attachments-grid" style="margin-top:12px;">
+      <div class="card">
+        <strong>Instructional Materials (IMs)</strong>
+        <p class="small">Upload PDF / DOCX</p>
+      </div>
+      <div class="card">
+        <strong>Table of Specifications (TOS)</strong>
+        <p class="small">Upload PDF</p>
+      </div>
+      <div class="card">
+        <strong>Test Questionnaire + Answer Key</strong>
+        <p class="small">Upload PDF</p>
+      </div>
+      <div class="card">
+        <strong>Reporters' Record</strong>
+        <p class="small">Upload photo or document</p>
+      </div>
+      <div class="card">
+        <strong>Whole Class Video / Link</strong>
+        <p class="small">Embed or paste external link (YouTube / Drive / Vimeo)</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="section" style="padding-bottom:60px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+      <div>
+        <div style="font-weight:700;">HANNAH F. DACUITAL</div>
+        <div class="small">E-PORTFOLIO IN PROFESSIONAL EDUCATION 003 — NOVEMBER 2025</div>
+      </div>
+
+      <div style="text-align:right;">
+        <div class="small">Eastern Visayas State University — School of Education</div>
+        <div class="actions" style="justify-content:flex-end;">
+          <a class="btn" href="#cover">Back to top</a>
+          <a class="btn ghost" href="#toc">Table of Contents</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+</body>
+</html>
